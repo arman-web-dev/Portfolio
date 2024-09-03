@@ -1,0 +1,93 @@
+#test {
+    position: relative;
+    background-image: url(../../assets/b2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+}
+#test::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.801); /* Same overlay effect */
+   
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #C49B66 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.t_icon {
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.test_text {
+    text-align: center;
+}
+.test_text p{
+
+    font-size: 18px;
+    font-weight: 400;
+    word-spacing: 2px;
+    margin-bottom: 15px;
+    color: #ddd;
+    line-height: 1.6;
+    font-family: "Open Sans", sans-serif;
+
+}
+#test .section_title{
+    margin-bottom: 50px;
+}
+.test_bottom_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._bottom_title h5{
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Josefin Sans", sans-serif;
+    color: #fff;
+    line-height: 1.2;
+}
+._bottom_name h4 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Josefin Sans", sans-serif;
+    color: #fff;
+    line-height: 1.2;
+    position: relative;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 16px !important;
+    line-height: 20px;
+    position: absolute;
+    top: 40px !important;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: #C49B66 !important;
+    
+}

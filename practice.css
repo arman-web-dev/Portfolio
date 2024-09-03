@@ -1,0 +1,9 @@
+.mixitup-container {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+.mixitup-container .mix{
+    width: 30% !important;
+}

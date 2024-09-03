@@ -1,0 +1,68 @@
+/* Banner.css */
+.banner-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.heading-small {
+    font-size: 40px;
+    font-weight: 200 !important;
+    line-height: 1.2;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.heading-large {
+    font-size: 4rem;
+    font-weight: lighter;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.bold-text {
+    font-weight: bold;
+    font-style: 70px !important;
+    font-weight: 300;
+    color: #FFF;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#ban {
+    position: relative;
+}
+
+#ban::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    /* Ensure content appears above the overlay */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+@keyframes smooth-cursor {
+    from { transform: translateX(0); }
+    to { transform: translateX(1ch); }
+  }
+  
+  .TypeAnimation_cursor {
+    animation: smooth-cursor 0.5s infinite steps(1, end);
+    animation-timing-function: linear;
+  }

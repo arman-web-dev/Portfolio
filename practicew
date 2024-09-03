@@ -1,0 +1,47 @@
+import React, { useEffect, useRef } from 'react';
+import mixitup from 'mixitup';
+import Mix1 from '../../assets/mix1.jpg'
+import Mix2 from '../../assets/mix2.jpg'
+import Mix3 from '../../assets/mix3.jpg'
+import Mix4 from '../../assets/mix4.jpg'
+import Mix5 from '../../assets/mix5.jpg'
+import Mix6 from '../../assets/mix6.jpg'
+import './try.css'
+
+const Try = () => {
+    const containerRef = useRef(null);
+
+    useEffect(() => {
+        // Initialize MixItUp when the component is mounted
+        const mixer = mixitup(containerRef.current);
+
+        // Cleanup: destroy the mixer instance when the component is unmounted
+        return () => {
+            mixer.destroy();
+        };
+    }, []);
+
+    return (
+        <div>
+            <div className="controls">
+                <button type="button" data-filter="all">All</button>
+                <button type="button" data-filter=".category-a">Brand</button>
+                <button type="button" data-filter=".category-b">Design</button>
+                <button type="button" data-filter=".category-a">Graphic</button>
+
+            </div>
+
+            <div className="mixitup-container" ref={containerRef}>
+                <div className="mix category-a"> <img src={Mix1} alt="" /></div>
+                <div className="mix category-b"><img src={Mix3} alt="" /></div>
+                <div className="mix category-a category-b"><img src={Mix5} alt="" /></div>
+                <div className="mix category-a"><img src={Mix2} alt="" /></div>
+                <div className="mix category-a"><img src={Mix4} alt="" /></div>
+                <div className="mix category-b"><img src={Mix6} alt="" /></div>
+            </div>
+        </div>
+    );
+};
+
+
+export default Try;

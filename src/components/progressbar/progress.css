@@ -1,0 +1,34 @@
+.skill {
+  margin-bottom: 23px;
+}
+
+.skills-progress {
+  width: 100%;
+  background-color: #e0e0e0; /* Background color of the progress bar container */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  height: 4px;
+}
+
+.skills-progress span {
+  display: block;
+  height: 100%;
+  background-color: #C49B66; /* Color of the progress fill */
+  width: 0; /* Start at 0% */
+  border-radius: 10px;
+  transition: width 2s ease-in-out; /* Smooth animation */
+}
+
+.skill h6 {
+  color: #fff;
+  font-size: 1rem; /* Adjust the font size as needed */
+  font-weight: 600; /* Adjust font weight for better visibility */
+  margin-bottom: 9px; /* Space below the label */
+}
+
+.skill span {
+  color: #fff; /* Color of the percentage text */
+  font-weight: 400; /* Light font weight for the percentage */
+}
+

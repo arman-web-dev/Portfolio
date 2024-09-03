@@ -1,0 +1,55 @@
+#number {
+    position: relative;
+}
+
+#number::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Same overlay effect */
+    z-index: 1;
+}
+
+.number-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    padding: 50px 0;
+}
+/* Number */
+.counter-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+  }
+  
+  .counter-item {
+    text-align: center;
+    margin: 10px; /* Spacing between counters */
+  }
+  
+  .counter-item span {
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .counter-item p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #bbb;
+    text-align: center;
+    
+  }
+.counter-item .ni{
+    font-size: 30px;
+    margin-bottom: 30px;
+    width: 45px;
+    height: 45px;
+    color: #C49B66;
+
+}
