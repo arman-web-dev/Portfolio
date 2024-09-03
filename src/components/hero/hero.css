@@ -5,7 +5,35 @@
 
 #hero img {
     width: 100%;
-    padding: 0 35px 0 15px;
+    padding: 0 20px 0 0;
+    transition: .5s;
+}
+#hero img:hover{
+    padding: 0px;
+}
+
+#hero .hero_img {
+    position: relative;
+    z-index: 1;
+}
+
+#hero .hero_img::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #C49B66;
+    height: 449px;
+    width: 432px;
+    opacity: 0.2;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+#hero .hero_img:hover::after {
+    top: -15px;
+    left: -15px;
+    opacity: 1;
 }
 
 .title {

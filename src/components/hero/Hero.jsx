@@ -9,7 +9,9 @@ const Hero = () => {
             <Container>
                 <Row>
                     <Col lg={5}>
+                    <div className="hero_img">
                         <img src={Hero1} alt="hero" />
+                    </div>
                     </Col>
                     <Col lg={7}>
                         <div className="title_total">
