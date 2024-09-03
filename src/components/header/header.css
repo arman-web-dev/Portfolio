@@ -40,7 +40,7 @@
     }
     @keyframes sticky {
     from {
-    top: -100px;
+    top: -50px;
     }
     to {
     top: 0;
