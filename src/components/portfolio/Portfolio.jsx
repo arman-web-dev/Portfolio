@@ -44,6 +44,7 @@ const Portfolio = () => {
         <Row className="mixitup-container" ref={containerRef}>
           <Col lg={4} className="mix category-a">
             <img src={Mix1} alt="" className="img-fluid" />
+            {/* <div className="mix_overlay"></div> */}
           </Col>
           <Col lg={4} className="mix category-b category-c">
             <img src={Mix3} alt="" className="img-fluid" />
