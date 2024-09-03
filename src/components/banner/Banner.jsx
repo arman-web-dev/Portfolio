@@ -25,7 +25,7 @@ const Banner = () => {
       wrapper="span"
       speed={60}
       deletionSpeed={60}
-      cursor={true}
+      cursor={false}
       style={{ fontSize: '70px', display: 'inline-block', fontWeight:'900'}}
       repeat={Infinity}
     />
