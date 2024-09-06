@@ -14,7 +14,6 @@ const Banner = () => {
                     <span className="bold-text">I am </span>
    <TypeAnimation
       sequence={[
-        // Same substring at the start will only be typed out once, initially
         'Arman Hossain',
         1000, // wait 1s before replacing "Mice" with "Hamsters"
         'A Developer',

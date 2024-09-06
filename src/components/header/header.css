@@ -1,14 +1,13 @@
-
-
 /* =====Navbar Start======== */
 
-.logo h3{
+.logo h3 {
     padding: 15px 0;
     width: 90px;
     font-size: 20px;
     font-weight: 700;
     color: #fff;
 }
+
 .nav-link {
     display: block;
     padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
@@ -17,12 +16,15 @@
     text-decoration: none;
     background: 0 0;
     border: 0;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
     color: #fff !important;
 }
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
     color: #C49B66 !important;
 }
+
 .Total {
     height: 80px;
     position: fixed !important;
@@ -30,19 +32,23 @@
     left: 0;
     width: 100%;
     z-index: 9999;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for better visibility */
 }
+
 /* =====Navbar End======== */
 .sticky_header {
     background-color: #131414;
     animation: sticky 1s;
     -webkit-animation: sticky 1s;
-    }
-    @keyframes sticky {
+}
+
+@keyframes sticky {
     from {
-    top: -50px;
+        top: -50px;
     }
+
     to {
-    top: 0;
+        top: 0;
     }
-    }
+}
