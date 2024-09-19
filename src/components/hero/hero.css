@@ -3,38 +3,41 @@
     background-color: #131414;
 }
 
-#hero img {
-    width: 100%;
-    padding: 0 20px 0 0;
-    transition: .5s;
-}
-
-#hero img:hover {
-    padding: 0px;
-}
-
 #hero .hero_img {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
+  padding: 0 20px 0 0;
+  transition: all 0.5s;
+}
+
+#hero .hero_img img {
+  width: 100%;
+  display: block;
+  transition: padding 0.5s;
+}
+
+#hero .hero_img:hover {
+  padding: 0 0 0 20px;
 }
 
 #hero .hero_img::after {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background-color: #C49B66;
-    height: 449px;
-    width: 432px;
-    opacity: 0.2;
-    z-index: -1;
-    transition: 0.5s;
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 5px;
+  bottom: -15px;
+  background-color: rgba(245, 245, 245, 0.05);
+  z-index: -1;
+  transition: all 0.5s;
 }
 
 #hero .hero_img:hover::after {
-    top: -15px;
-    left: -15px;
-    opacity: 1;
+  background-color: #C49B66;
+  top: -15px;
+  left: 5px;
+  right: 15px;
+  bottom: 15px;
 }
 
 .title {
@@ -152,7 +155,6 @@
 .buton a:before {
     content: attr(back);
     font-family: "Font Awesome\ 5 Free";
-    /* Ensure Font Awesome is loaded */
     font-size: 18px;
     position: absolute;
     top: 0;

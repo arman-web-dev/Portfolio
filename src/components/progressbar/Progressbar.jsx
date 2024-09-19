@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import './progress.css';
 
-const Progressbar = ({ value, label, description }) => {
+const Progressbar = ({ value, label }) => {
   const progressRef = useRef(null);
 
   useEffect(() => {

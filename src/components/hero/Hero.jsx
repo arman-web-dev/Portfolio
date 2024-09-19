@@ -30,7 +30,7 @@ const Hero = () => {
                         </div>
                         <div className="btn_btn">
                             <span className="buton text-center">
-                                <a href="#0" front="Hire Me" back="&#xf1d8;" data-scroll-nav="6" className='first_btn'></a>
+                                <a href="#0" front="Hire Me" back="&#xf1d8;" className='first_btn'></a>
                             </span>
                             <span className="buton buton-bord text-center">
                                 <a href="CV.pdf" front="Download C.V" back="&#xf019;" download="CV.pdf"></a>
