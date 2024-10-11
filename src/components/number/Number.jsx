@@ -11,10 +11,10 @@ import { useInView } from 'react-intersection-observer';
 import numberB from '../../assets/b3.jpg';
 
 const Number = () => {
-  const commonDuration = 4; // Set a common duration for all counters
+  const commonDuration = 4; 
   const { ref, inView } = useInView({
-    triggerOnce: true, // Start animation only once
-    threshold: 0.3, // Start when 30% of the component is in view
+    triggerOnce: false, 
+    threshold: 0.3, 
   });
 
   return (

@@ -48,7 +48,6 @@
 .banner-content {
     position: relative;
     z-index: 2;
-    /* Ensure content appears above the overlay */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -57,12 +56,18 @@
     color: white;
     text-align: center;
 }
+
 @keyframes smooth-cursor {
-    from { transform: translateX(0); }
-    to { transform: translateX(1ch); }
-  }
-  
-  .TypeAnimation_cursor {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(1ch);
+    }
+}
+
+.TypeAnimation_cursor {
     animation: smooth-cursor 0.5s infinite steps(1, end);
     animation-timing-function: linear;
-  }
+}

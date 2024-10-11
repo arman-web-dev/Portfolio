@@ -44,22 +44,3 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-/* .mix {
-    position: relative;
-}
-.mix_overlay {
-    position: absolute;
-    content: '';
-    top: 5px;
-    left: 17px;
-    background-color: tomato;
-    height: 97%;
-    width: 90%;
-    opacity: 0;
-    transition: .5s;
-}
-.mix img:hover.mix_overlay{
-    opacity: 1;
-
-}
- */

@@ -9,7 +9,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Same overlay effect */
+    background-color: rgba(0, 0, 0, 0.8); 
     z-index: 1;
 }
 
@@ -29,7 +29,7 @@
   
   .counter-item {
     text-align: center;
-    margin: 10px; /* Spacing between counters */
+    margin: 10px;
   }
   
   .counter-item span {

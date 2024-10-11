@@ -9,8 +9,8 @@ import { useInView } from 'react-intersection-observer';
 
 const Education = () => {
   const { ref, inView } = useInView({
-    triggerOnce: true, // Start animation only once
-    threshold: 0.4, // Start when 30% of the component is in view
+    triggerOnce: false, 
+    threshold: 0.4, 
   });
 
   return (
@@ -81,7 +81,6 @@ const Education = () => {
                   <Progressbar value={80} label="Development" />
                   <Progressbar value={85} label="Branding" />
                   <Progressbar value={75} label="Marketing" />
-                  {/* Add more Progressbar components as needed */}
                 </div>
               )}
             </Col>
